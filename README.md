@@ -36,12 +36,12 @@ Set-Location your directory
 python .\main.py
 ```
 
-Run with the provided YAML config:
+You can also run with the YAML config:
 
 ```powershell
 conda activate your environment
 Set-Location your directory
-python .\main.py --config .\configs\fedcdp.yaml
+python .\main.py --config your yaml file
 ```
 
 ## Logging
