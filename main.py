@@ -515,7 +515,7 @@ def main() -> None:
     args = parse_args()
     overrides = parse_override_items(args.overrides)
     checkpoint_path: Path | None = None
-
+    ensure_wandb_online_login()
     if args.resume and args.config is None and args.checkpoint_path is not None:
         checkpoint_path = Path(args.checkpoint_path)
         checkpoint = load_checkpoint_state(checkpoint_path)
