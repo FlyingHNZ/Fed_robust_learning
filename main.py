@@ -11,7 +11,7 @@ import wandb
 from torch import Tensor
 from torch.utils.data import DataLoader
 
-from src.data import get_cifar100_federated
+from src.data import dataset
 from src.diffusion import (
     ContrastiveGuidedDDIM,
     FeatureDiffusionTrainer,
