@@ -147,7 +147,7 @@ def run_training(
 ) -> None:
     set_global_seed(config.seed)
 
-    client_loaders, test_loader = get_cifar100_federated(config)
+    client_loaders, test_loader = get_federated_dataloaders(config)
 
     global_model = SplitResNet18(num_classes=config.num_classes).to(config.device)
     server = FedCDPServer(config)
